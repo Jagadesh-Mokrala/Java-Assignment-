@@ -1,0 +1,12 @@
+class Example
+{
+    public static void main(String args[]) 
+    {
+
+      System.out.println("My name is jagadesh");
+      System.out.println("My father name is Sai");
+      System.out.println("I am from Amalapuram");
+      System.out.println("Hobbies are reading newspaper and internet surfing");
+      System.out.println("I have completed my graduation");
+    }
+}
