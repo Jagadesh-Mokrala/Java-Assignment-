@@ -1,0 +1,21 @@
+import java.util.*;
+
+class Example2
+{
+	public static void main(String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		int sno,phno;
+		String sname;
+		System.out.print("Enter Student Number:");
+		sno=sc.nextInt();
+		System.out.print("Enter Student Name:");
+		sname=sc.next();
+		System.out.print("Enter Phone Number:");
+		phno=sc.nextInt();
+		System.out.print("--------------------------");
+		System.out.print("\nStudent Number:"+sno);
+		System.out.print("\nStudent Name:"+sname);
+		System.out.print("\nPhone Number:"+phno);
+	}
+}
