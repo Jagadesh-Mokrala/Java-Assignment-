@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Example 
+{
+    public static void main(String args[]) 
+	{
+    	Scanner in= new Scanner(System.in);
+    	int a,b,c;
+    	System.out.print("Enter a value: ");
+    	a=in.nextInt();
+    	System.out.print("Enter b value: ");
+    	b=in.nextInt();
+    	c=a+b;
+    	System.out.print("Addition="+c);
+    	c=a-b;
+    	System.out.print("\nSubtraction="+c);
+    	c=a*b;
+    	System.out.print("\nMultiplication="+c);
+    }
+}
