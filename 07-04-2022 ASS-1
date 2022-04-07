@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Example 
+{
+    public static void main(String args[]) 
+	{
+    	Scanner in= new Scanner(System.in);
+    	int p;
+		double t,r,emi,si;
+    	System.out.print("Enter p value: ");
+    	p=in.nextInt();
+    	System.out.print("Enter t value: ");
+    	t=in.nextDouble();
+		System.out.print("Enter r value: ");
+    	r=in.nextDouble();
+    	si=(p*t*r)/100;
+		emi=(p+si)/(t*12);
+    	System.out.print("\nEMI="+emi);
+    }
+}
