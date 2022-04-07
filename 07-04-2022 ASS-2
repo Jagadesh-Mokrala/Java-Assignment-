@@ -1,0 +1,15 @@
+import java.util.*;
+
+class Sample
+{
+	public static void main(String args[])
+	{
+		Scanner in=new Scanner(System.in);
+		double d=in.nextDouble();
+		String str=in.next();
+		if(str=' ') 
+		System.out.print("string");
+		else
+		System.out.print("numeric");
+	}
+}
