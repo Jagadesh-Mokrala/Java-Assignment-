@@ -12,3 +12,17 @@ class Example
     System.out.println(a <= b); 
   }
 }
+
+output:
+    E:\>javac Examp.java
+
+E:\>java Examp
+a=10 and b=20
+false
+true
+false
+true
+false
+true
+
+E:\>
