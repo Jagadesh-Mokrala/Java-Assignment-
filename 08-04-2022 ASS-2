@@ -1,0 +1,48 @@
+class Min
+{
+	public static void main(String args[])
+	{
+		System.out.print("Integer");
+		System.out.print("\nMin value=" + Integer.MIN_VALUE);
+		System.out.print("\nMax value=" + Integer.MAX_VALUE);
+		System.out.print("\nFloat");
+		System.out.print("\nMin value=" + Float.MIN_VALUE);
+		System.out.print("\nMax value=" + Float.MAX_VALUE);
+		System.out.print("\nByte");
+		System.out.print("\nMin value=" + Byte.MIN_VALUE);
+		System.out.print("\nMax value=" + Byte.MAX_VALUE);
+		System.out.print("\nDouble");
+		System.out.print("\nMin value=" + Double.MIN_VALUE);
+		System.out.print("\nMax value=" + Double.MAX_VALUE);
+		System.out.print("\nShort");
+		System.out.print("\nMin value=" + Short.MIN_VALUE);
+		System.out.print("\nMax value=" + Short.MAX_VALUE);
+		System.out.print("\nLong");
+		System.out.print("\nMin value=" + Long.MIN_VALUE);
+		System.out.print("\nMax value=" + Long.MAX_VALUE);
+	}
+}
+
+OUTPUT:
+  E:\>javac Min.java
+
+E:\>java Min
+Integer
+Min value=-2147483648
+Max value=2147483647
+Float
+Min value=1.4E-45
+Max value=3.4028235E38
+Byte
+Min value=-128
+Max value=127
+Double
+Min value=4.9E-324
+Max value=1.7976931348623157E308
+Short
+Min value=-32768
+Max value=32767
+Long
+Min value=-9223372036854775808
+Max value=9223372036854775807
+E:\>
