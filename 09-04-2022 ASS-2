@@ -1,0 +1,16 @@
+class LRShift
+{
+	public static void main(String args[])
+	{
+		int n=20,m=70,i,j;
+		i=n<<5;
+		j=m>>5;
+		System.out.print(i);
+		System.out.print(j);
+
+	}
+}
+
+OUTPU:
+		640
+		2
