@@ -1,0 +1,21 @@
+class Increment
+{
+	public static void main(String args[])
+	{
+		int a=10,b=20;
+		int x,y;
+		x=a+++b--;
+		y=b--+a++;
+		System.out.print("a and b values:"+a+b);
+		System.out.print("x and y values:"+x+y);
+	}
+}
+
+OUTPUT:
+			D:\>javac Increment.java
+
+			D:\>java Increment
+			
+			a and b values:12 18
+			x and y values:30	 30
+			D:\>
