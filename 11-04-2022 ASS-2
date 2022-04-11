@@ -1,0 +1,25 @@
+import java.util.*;
+class Minimum
+{
+	public static void main(String args[])
+	{
+		int a,b,c;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter a,b,c values");
+		a=sc.nextInt();
+		b=sc.nextInt();
+		c=sc.nextInt();
+		int min=Math.min(a,b);
+		int minimum=Math.min(min,c);
+		System.out.print("Minimum number="+minimum);
+	}
+}
+OUTPUT:
+D:\>javac Minimum.java
+
+D:\>java Minimum
+Enter a,b,c values10
+20
+30
+Minimum number=10
+D:\>
