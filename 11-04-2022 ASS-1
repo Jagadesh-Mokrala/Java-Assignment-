@@ -1,0 +1,51 @@
+import java.util.*;
+class Maximum
+{
+	public static void main(String args[])
+	{
+		int a,b,c,d,e,f,g,h;
+		Scanner in=new Scanner(System.in);
+		System.out.print("Enter 8 values:");
+		a=in.nextInt();
+		b=in.nextInt();
+		c=in.nextInt();
+		d=in.nextInt();
+		e=in.nextInt();
+		f=in.nextInt();
+		g=in.nextInt();
+		h=in.nextInt();
+		//int max1=Math.max(a,b);
+		//int max2=Math.max(c,d);
+		//int max3=Math.max(e,f);
+		//int max4=Math.max(g,h);
+		int maxi=Math.max(Math.max(a,b),c);
+		int maxi1=Math.max(Math.max(d,e),f);
+		int maxi2=Math.max(Math.max(g,h),maxi1);
+		System.out.print("Maximum number:"+maxi2);
+	}
+}
+OUTPUT:
+D:\>javac Maximum.java
+
+D:\>java Maximum
+Enter 8 values:1
+2
+3
+5
+6
+0
+7
+6
+Maximum number:7
+D:\>javac Maximum.java
+
+D:\>java Maximum
+Enter 8 values:12
+56
+89
+35
+3694
+125
+6887
+23
+Maximum number:6887
