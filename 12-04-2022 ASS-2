@@ -1,0 +1,32 @@
+write a java program to print biggest of 3 numbers using command line arguments.
+
+class Biggest
+{
+	public static void main(String args[])
+	{
+		int a=Integer.parseInt(args[0]);
+		int b=Integer.parseInt(args[1]);
+		int c=Integer.parseInt(args[2]);
+		if(a>b && a>c)
+		{
+			System.out.print("a is big");
+		}
+		else if(b>a && b>c)
+		{
+			System.out.print("b is big");
+		}
+		else
+		{
+			System.out.print("c is big");
+		}
+	}
+}
+
+Output:
+E:\>javac Biggest.java
+
+E:\>java Biggest
+23
+86
+156
+c is big
