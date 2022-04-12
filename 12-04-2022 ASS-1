@@ -1,0 +1,32 @@
+Write a program to print given number is Even or Odd.
+
+import java.util.*;
+class Even
+{
+	public static void main(String args[])
+	{
+		int x;
+		Scanner in=new Scanner(System.in);
+		System.out.print("Enter x value");
+		x=in.nextInt();
+		if(x%2==0)
+		{
+		System.out.print("Given number is Even");
+		}
+		else
+		{
+		System.out.print("Given number is odd");
+		}
+	}
+}
+
+Output:
+D:\>javac Even.java
+D:\>java Even
+Enter x value 123
+Given number is odd
+
+D:\>javac Even.java
+D:\>java Even
+Enter x value 648
+Given number is Even
