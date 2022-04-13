@@ -1,0 +1,109 @@
+import java.util.*;
+class StudentResult
+{
+	public static void main(String args[])
+	{
+		int sno,mat,phy,cs,total,avg;
+		String name;
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter sno,name,mat,phy,cs marks:  ");
+		sno=in.nextInt();
+		name=in.next();
+		mat=in.nextInt();
+		phy=in.nextInt();
+		cs=in.nextInt();
+		total=mat+phy+cs;
+		avg=total/3;
+		System.out.println("sno:"+sno);
+		System.out.println("name:" +name);
+		System.out.println("Maths Grade:");
+		if(mat>91)
+		System.out.println("O");
+		else if(mat>81)
+		System.out.println("A");
+		else if(mat>65)
+		System.out.println("B");
+		else if(mat>61)
+		System.out.println("C");
+		else if(mat>50)
+		System.out.println("D");
+		else if(mat>40)
+		System.out.println("P");
+		else
+		System.out.println("F");
+		
+		System.out.println("\nPhysics Grade:");
+		if(phy>91)
+		System.out.println("O");
+		else if(phy>81)
+		System.out.println("A");
+		else if(phy>65)
+		System.out.println("B");
+		else if(phy>61)
+		System.out.println("C");
+		else if(phy>50)
+		System.out.println("D");
+		else if(phy>40)
+		System.out.println("P");
+		else
+		System.out.println("F");
+
+		System.out.println("\n Computer Grade:");
+		if(cs>91)
+		System.out.println("O");
+		else if(cs>81)
+		System.out.println("A");
+		else if(cs>65)
+		System.out.println("B");
+		else if(cs>61)
+		System.out.println("C");
+		else if(cs>50)
+		System.out.println("D");
+		else if(cs>40)
+		System.out.println("P");
+		else
+		System.out.println("F");
+		System.out.println("\n Grade:");
+		if(mat>40 && phy>40 && cs>40)
+		{
+			if(avg>91)
+		System.out.println("O");
+		else if(avg>81)
+		System.out.println("A");
+		else if(avg>65)
+		System.out.println("B");
+		else if(avg>61)
+		System.out.println("C");
+		else if(avg>50)
+		System.out.println("D");
+		else if(avg>40)
+		System.out.println("P");
+		}
+		else
+		System.out.println("F\n********************************");
+}
+}
+
+OUTPUT:
+D:\>javac StudentResult.java
+
+D:\>java StudentResult
+Enter sno,name,mat,phy,cs marks:
+1234
+jagadesh
+98
+89
+79
+sno:1234
+name:jagadesh
+Maths Grade:
+O
+
+Physics Grade:
+A
+
+ Computer Grade:
+B
+
+ Grade:
+A
