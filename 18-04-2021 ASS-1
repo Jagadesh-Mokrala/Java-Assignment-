@@ -1,0 +1,133 @@
+import java.util.*;
+class Balance
+{
+	static int bal=15000;
+	static void debit(int amount)
+	{
+		if(amount>bal)
+		{
+			System.out.print("\nInsufficient Balance");
+			System.out.print("\nTry Again");
+		}
+		else
+		{
+			System.out.print("\nTransaction processing successfully");
+			bal=bal-amount;
+		}
+	}
+	static void credit(int amount)
+	{
+		bal=bal+amount;
+		System.out.print("\nTransaction processing successfully");
+	}
+	static void checkbalance()
+	{
+		System.out.print("\nAccount Balance:"+bal);
+	}
+	public static void main(String args[])
+	{
+		int amount,op,upi;
+		Scanner in=new Scanner(System.in);
+		System.out.print("1.Phonepe\n2.Google pay\n3.Amazon pay\n4.Paytm");
+		upi=in.nextInt();
+		switch(upi)
+		{
+			case 1:
+					System.out.print("1.Credit\n2.Debit\n3.Check Balance\n");
+					do
+					{
+						System.out.print("\nChoose your option");
+						op=in.nextInt();
+						switch(op)
+						{
+							case 1: 
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									credit(amount);
+									break;
+							case 2:
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									debit(amount);
+									break;
+							case 3:
+									checkbalance();
+									break;
+						}
+					}
+					while(op<4); 
+			case 2:
+					System.out.print("1.Credit\n2.Debit\n3.Check Balance");
+					do
+					{
+						System.out.print("Choose your option");
+						op=in.nextInt();
+						switch(op)
+						{
+							case 1: 
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									credit(amount);
+									break;
+							case 2:
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									debit(amount);
+									break;
+							case 3:
+									checkbalance();
+									break;
+						}
+					}
+					while(op<4); 
+			case 3:
+					System.out.print("1.Credit\n2.Debit\n3.Check Balance");
+					do
+					{
+						System.out.print("\nChoose your option");
+						op=in.nextInt();
+						switch(op)
+						{
+							case 1: 
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									credit(amount);
+									break;
+							case 2:
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									debit(amount);
+									break;
+							case 3:
+									checkbalance();
+									break;
+						}
+					}
+					while(op<4); 
+			case 4:
+					System.out.print("1.Credit\n2.Debit\n3.Check Balance");
+					do
+					{
+						System.out.print("\nChoose your option");
+						op=in.nextInt();
+						switch(op)
+						{
+							case 1: 
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									credit(amount);
+									break;
+							case 2:
+									System.out.print("\nEnter Amount:");
+									amount=in.nextInt();
+									debit(amount);
+									break;
+							case 3:
+									checkbalance();
+									break;
+						}
+					}
+					while(op<4); 
+		}
+	}
+}
