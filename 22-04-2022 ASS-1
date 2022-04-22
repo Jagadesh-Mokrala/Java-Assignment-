@@ -1,0 +1,27 @@
+class Personal
+{	
+  int empid;  
+  String ename, desig;
+  Personal(int id, String name, String c) 
+  {
+	empid = id ; 
+	ename = name;
+	desig = c;
+  }  
+  void display()
+  {
+	System.out.println("eid: "+empid);
+	System.out.println("name: "+ename);
+	System.out.println("Designation: "+desig);
+  }	 
+  public static void main(String args[]){
+
+    Personal p1 = new Personal(2, "Jagadesh", "developer");
+    Personal p2= new Personal(25, "amu", "designer");
+    Personal p3 = new Personal(1, "Sandeep", "manager");	
+   
+   	 p1.display();  
+     p2.display();
+     p3.display();  
+  }	      
+} 
