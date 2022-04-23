@@ -1,0 +1,52 @@
+import java.util.*;
+class Search
+{
+	public static void main(String args[])
+	{
+		int n,i,search,flag=0;
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter Array Size:");
+		n=in.nextInt();
+		int array[]=new int[n];
+		System.out.println("Enter Array elements:");
+		for(i=0;i<n;i++)
+		{
+			array[i]=in.nextInt();
+		}
+		System.out.println("Enter elements to search:");
+		search=in.nextInt();
+		for(i=0;i<n;i++)
+		{
+			if(array[i]==search)
+			{
+				System.out.println("Element "+search+" found at "+i+" position");
+				flag=1;
+				break;
+			}
+		}
+		if(flag==0)
+		{
+			System.out.println("Element "+search+" not found");
+		}
+	}
+}
+
+output:
+D:\>javac Search.java
+
+D:\>java Search
+Enter Array Size:
+5
+Enter Array elements:
+25
+36
+58
+10
+98
+Enter elements to search:
+98
+Element 98 found at 4 position
+
+D:\>
+
+		
