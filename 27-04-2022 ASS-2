@@ -1,0 +1,18 @@
+import java.util.*;
+class StringReplace
+{
+	public static void main(String args[])
+	{
+		Scanner in=new Scanner(System.in);
+		String s1,s2;
+		System.out.println("Enter First string:");
+		s1=in.nextLine();
+		System.out.println("Enter Second string:");
+		s2=in.nextLine();
+		s2=s1.replace('a','z');
+		//int n=s1.length();
+		//System.out.println(n);
+	}
+}
+		
+		
